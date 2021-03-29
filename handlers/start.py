@@ -30,11 +30,11 @@ Use the buttons below to know more about me.""",
                         "Channel 🔈", url="https://t.me/CheemsUserbot"
                     ),
                     InlineKeyboardButton(
-                        "Add me", url="https://t.me/devils_crazy_chats" )
+                        "Add me", url="http://t.me/MusicVcRobot?startgroup=true" )
                 ],
                 [
                     InlineKeyboardButton(
-                        "Add player", url="https://www.paypal.me/devilgaurav"
+                        "Support", url="https://t.me/CheemsUserbot"
                     )
                 ]
             ]
