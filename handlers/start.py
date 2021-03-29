@@ -19,7 +19,7 @@ Use the buttons below to know more about me.""",
             [
                 [
                     InlineKeyboardButton(
-                        "⚒ COMMANDS", url="https://github.com/edguru/devilsmusic"
+                        "⚒ COMMANDS", url="https://telegra.ph/MusicVcRobot-GroupMusicUserbot-03-24"
                     )
                 ],
                 [
