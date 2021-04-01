@@ -30,11 +30,11 @@ Use the buttons below to know more about me.""",
                         "Channel 🔈", url="https://t.me/CheemsUserbot"
                     ),
                     InlineKeyboardButton(
-                        "Add me", url="http://t.me/MusicVcRobot?startgroup=true" )
+                        "Support", url="https://t.me/CheemsUserbot" )
                 ],
                 [
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/CheemsUserbot"
+                        "Add Me", url="http://t.me/MusicVcRobot?startgroup=true"
                     )
                 ]
             ]
