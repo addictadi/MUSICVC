@@ -80,12 +80,12 @@ async def play(client: Client, message_: Message):
         position = sira.add(message_.chat.id, file_path)
         await res.edit_text(f"#️⃣ Queued at position {position}.")
     else:
-        await res.edit_text("▶️ Playing...")
+        await res.edit_text("▶️ Playing by [MusicBot](https://t.me/CheemsUserbot)")
         res.delete
         m = await client.send_photo(
         chat_id=message_.chat.id,
         photo="https://telegra.ph/file/d20f0e4fbe6e9cc3553d2.jpg",
-        caption=f"Playing Your song Via  music bot.",
+        caption=f"Playing Your song Via  [music bot](https://t.me/CheemsUserbot).",
          ) 
         tgcalls.pytgcalls.join_group_call(message_.chat.id, file_path)
 
@@ -121,7 +121,7 @@ async def deezer(client: Client, message_: Message):
         position = sira.add(message_.chat.id, file_path)
         await res.edit_text(f"#️⃣ Queued at position {position}.")
     else:
-        await res.edit_text("▶️ Playing...")
+        await res.edit_text("▶️ Playing by [MusicBot](https://t.me/CheemsUserbot)")
         tgcalls.pytgcalls.join_group_call(message_.chat.id, file_path)
     await res.delete()
     m = await client.send_photo(
@@ -165,14 +165,14 @@ async def jiosaavn(client: Client, message_: Message):
         position = sira.add(message_.chat.id, file_path)
         await res.edit_text(f"#️⃣ Queued at position {position}.")
     else:
-        await res.edit_text("▶️ Playing...")
+        await res.edit_text("▶️ Playing by [MusicBot](https://t.me/CheemsUserbot)")
         tgcalls.pytgcalls.join_group_call(message_.chat.id, file_path)
     await res.edit("Processing Thumbnail.")
     await generate_cover_square(requested_by, sname, ssingers, sduration, sthumb)
     await res.delete()
     m = await client.send_photo(
         chat_id=message_.chat.id,
-        caption=f"Playing {sname} Via Jiosaavn",
+        caption=f"Playing {sname} Via [Jiosaavn](https://t.me/CheemsUserbot)",
         photo="final.png",
     )
     os.remove("final.png")
@@ -216,17 +216,17 @@ async def ytp(client: Client, message_: Message):
         position = sira.add(message_.chat.id, file_path)
         await res.edit_text(f"#️⃣ Queued at position {position}.")
     else:
-        await res.edit_text("▶️ Playing...")
+        await res.edit_text("▶️ Playing by [MusicBot](https://t.me/CheemsUserbot)")
         tgcalls.pytgcalls.join_group_call(message_.chat.id, file_path)
     await res.edit("Processing Thumbnail.")
     await generate_cover(requested_by, title, views, duration, thumbnail)
     res.delete
     m = await client.send_photo(
         chat_id=message_.chat.id,
-        caption=f"Playing `{query}` Via YouTube",
+        caption=f"Playing `{query}` Via [YouTube](https://t.me/CheemsUserbot)",
         photo="final.png",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("watch on Youtube", url=link)]]
+            [[InlineKeyboardButton("Watch On Youtube", url=link)]]
         ),
         parse_mode="markdown",
     )
