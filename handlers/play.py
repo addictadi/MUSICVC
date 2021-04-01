@@ -226,7 +226,7 @@ async def ytp(client: Client, message_: Message):
         caption=f"Playing `{query}` Via [YouTube](https://t.me/CheemsUserbot)",
         photo="final.png",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("MusicBot", url=https://t.me/CheemsUserbot)]]
+            [[InlineKeyboardButton("Watch on youtube", url=link)]]
         ),
         parse_mode="markdown",
     )
