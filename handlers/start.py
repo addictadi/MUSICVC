@@ -9,24 +9,32 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        """👋🏻 Hi {message.from_user.first_name}!
+        f"""<b>👋🏻 Hi {message.from_user.first_name}!</b>
 
-I am SU Music Player, an open-source bot that lets you play music in your Telegram groups.
+I am  Music Bot, an open-source bot that lets you play music in your Telegram groups voice chat.
+
 
 Use the buttons below to know more about me.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⚒ Source code", url="https://t.me/SuMusicPlayer"
+                        "⚒ COMMANDS", url="https://telegra.ph/MusicVcRobot-GroupMusicUserbot-03-24"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/su_Chats"
+                        "💬 Group", url="https://t.me/miakhalifachatgroup"
                     ),
                     InlineKeyboardButton(
-                        "Channel 🔈", url="https://t.me/su_Bots"
+                        "Channel 🔈", url="https://t.me/CheemsUserbot"
+                    ),
+                    InlineKeyboardButton(
+                        "Add me", url="http://t.me/MusicVcRobot?startgroup=true" )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "Support", url="https://t.me/CheemsUserbot"
                     )
                 ]
             ]

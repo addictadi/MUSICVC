@@ -1,8 +1,23 @@
-# SU Music Player — The first open-source PyTgCalls based Pyrogram bot to play music in voice chats
+# Music Telegram Bot - This is a pyrogram bot based on pytgcalls for playing songs or audio files in Telegram group voice chat
+[![Devil](https://telegra.ph/file/f739907e5a8c8aa78e758.jpg)](https://t.me/CheemsUserbot)
+![GitHub repo size](https://img.shields.io/github/repo-size/edguru/devilsmusic)
 
-## Note
+## Notes
+-The commands and there use is explained here-:
+- `/saavn` To search song on jio saavan and play the first result 
+- `/ytt` To search the song on Youtube and play the first matching result.
+- `/deezer` To search song on deezer and play good quality stream.
+- `/play` Reply this in response to a link or any telegram audio file it will be played 
+- `/skip` to skip current song 
+- `/stop or /kill` to stop the streaming of song 
+- `/pause` to pause the stream 
+- `/resume` to resume the playback. 
+- Inline search is also supported.
 
-Neither this, or PyTgCalls are stable.
+- Use pyrogram string u can use @StringGenBot
+
+-It is inspired from su music project and hamkercat's telegram voice bot.
+Neither su music project , nor pytgcalls are stable
 
 ## Requirements
 
@@ -12,7 +27,7 @@ Neither this, or PyTgCalls are stable.
 - [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 
 ## Deployment
-
+` Don't forget to star 🌟 us `
 ### Config
 
 Copy `example.env` to `.env` and fill it with your credentials.
@@ -40,11 +55,13 @@ Copy `example.env` to `.env` and fill it with your credentials.
    ```
 
 ### Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/suprojects/CallsMusicHeroku/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ashisharmy/MUSICVC/)
 
-
+## Support
+- [Channel](https://t.me/CheemsUserbot)
+- [Group](https://t.me/miakhalifachatgroup)
 ## Credits
-
-- [Roj](https://github.com/rojserbest): main developer
-- [Marvin](https://github.com/BlackStoneReborn): bug reporter
+- [hamker cat](https://github.com/thehamkercat/Telegram_VC_Bot)
+- [Roj](https://github.com/rojserbest)
+- [Marvin](https://github.com/BlackStoneReborn)
 - [Laky](https://github.com/Laky-64) & [Andrew](https://github.com/AndrewLaneX): PyTgCalls
