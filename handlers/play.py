@@ -127,7 +127,7 @@ async def deezer(client: Client, message_: Message):
     m = await client.send_photo(
         chat_id=message_.chat.id,
         photo="final.png",
-        caption=f"Playing [{title}]({url}) Via Deezer."
+        caption=f"Playing [{title}]({url}) Via [Deezer](https://t.me/CheemsUserbot)."
     ) 
     os.remove("final.png")
 # Jiosaavn--------------------------------------------------------------------------------------
@@ -226,7 +226,7 @@ async def ytp(client: Client, message_: Message):
         caption=f"Playing `{query}` Via [YouTube](https://t.me/CheemsUserbot)",
         photo="final.png",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Watch On Youtube", url=link)]]
+            [[InlineKeyboardButton("MusicBot", url=https://t.me/CheemsUserbot)]]
         ),
         parse_mode="markdown",
     )
