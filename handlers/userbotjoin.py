@@ -4,7 +4,7 @@ from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserAlreadyParticipant
 from helpers.decorators import errors, authorized_users_only
 
-@Client.on_message(filters.group & filters.command(["userbotjoin"]))
+@Client.on_message(filters.group & filters.command(["join"]))
 @authorized_users_only
 @errors
 async def addchannel(client, message):
@@ -20,22 +20,22 @@ async def addchannel(client, message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "cheemsmusic"
+        user.first_name =  "music"
 
     try:
         await USER.join_chat(invitelink)
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>@Musicbot_robo already in your chat</b>",
+            "<b>@musicbot_robo already in your chat</b>",
         )
         pass
     except Exception as e:
         print(e)
         await message.reply_text(
             f"<b>User {user.first_name} couldn't join your group! Make sure user is not banned in group."
-            "\n\nOr manually add @Musicbot_robo to your Group and try again</b>",
+            "\n\nOr manually add @musicbot_robo to your Group and try again</b>",
         )
         return
     await message.reply_text(
-            "<b>@Musicbot_robo userbot joined your chat</b>",
+            "<b>@musicbot_robo userbot joined your chat</b>",
         )
